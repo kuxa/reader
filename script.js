@@ -39,7 +39,7 @@ function nastaveni()
        {
         var procenta = 0;	
        }
-    $("#vyska").html(procenta+"%"); 
+    $("#vyska").html(Math.round(procenta*100)/100+" %"); 
 
     $('#divek').hide();  
     $('#nastaveni').show();
