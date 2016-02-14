@@ -30,6 +30,17 @@ function nastaveni()
  {
   if ($("#divek").is(":visible"))	
    {
+    if (localStorage.pozice)
+     {
+      $('body').scrollTop(localStorage.pozice);
+      var procenta = parseInt(localStorage.pozice)/$(document).height()*100;
+     }
+      else
+       {
+        var procenta = 0;	
+       }
+    $("#vyska").html(procenta+"%"); 
+
     $('#divek').hide();  
     $('#nastaveni').show();
    }
@@ -37,15 +48,6 @@ function nastaveni()
      {
       $('#divek').show();
       $('#nastaveni').hide();
-      if (localStorage.pozice)
-       {
-        $('body').scrollTop(localStorage.pozice);
-        var procenta = parseInt(localStorage.pozice)/$(document).height()*100;
-       }
-        else
-         {
-          var procenta = 0;	
-         }
-      $("#vyska").html(procenta+"%"); 
+ 
      }
  }
