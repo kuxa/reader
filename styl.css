@@ -11,9 +11,55 @@ body
   bottom: 0;
   right: 0;	
   opacity: .5;
+  z-index: 10;
  }
 
 #ikona img 
  {
   width: 2em;
  }
+
+#nastaveni
+ {
+  font-size: 1.35em;	
+ } 
+
+#procenta
+ {
+  position: fixed;
+  bottom: 5px;
+  left: 10px;	
+ } 
+
+#lista
+ {
+  height: 3px;
+  width: 100%;
+  background-color: green;
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+ } 
+
+.tlacitka
+ {
+  text-align: center;
+  font-size: 1.5em;	
+ }
+
+.tlacitka input
+ {
+  background: #e6e6e6;
+  background-image: linear-gradient(to bottom, #e6e6e6, #b3b3b3);
+  border-radius: 5;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 1.2em;
+  text-decoration: none; 	
+  margin: 0 10px;
+ } 
+
+.tlacitka input:disabled
+ {
+  background-image: linear-gradient(to bottom, #808080, #4d4d4d);
+ }  
